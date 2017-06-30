@@ -4,16 +4,26 @@ body {
   text-align: center;
 }
 
+
 h1 {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 section { 
-  color: #CCC;
-  font-size: 15vh;
+  color: #AAA;
+  font-size: 25vh;
 }
 
 aside {
-  font-size: 2vh;
-  color: #999;
+  font-size: 1vh;
+  color: #666;  
+}
+
+section sup {
+  font-size: 1vh;
+  vertical-align: top;
+}
+
+aside sup {
+  font-size: .7vh;
 }
