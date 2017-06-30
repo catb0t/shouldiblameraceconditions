@@ -1,0 +1,18 @@
+body { 
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  padding-top: 45%;
+}
+
+section { 
+  color: #AAA;
+  font-size: 15vh;
+}
+
+aside {
+  font-size: 6vh;
+  font-color: #666;
+}
