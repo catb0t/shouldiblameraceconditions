@@ -1,22 +1,25 @@
-body { 
+body {
   background: black;
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-
 h1 {
   padding-top: 10%;
 }
 
-section { 
+section {
   color: #AAA;
   font-size: 25vh;
 }
 
 aside {
   font-size: 1vh;
-  color: #666;  
+  color: #666;
+}
+
+h1 sup {
+  vertical-align: top;
 }
 
 section sup {

@@ -1,18 +1,26 @@
-<head> 
+<head>
   <link rel="stylesheet" type="text/css" href="index.css" />
-  <title> It's a heisenbug! Should I blame race conditions? </title> 
+  <title> It's a heisenbug! Should I blame race conditions? </title>
 </head>
 
 <body>
   <section>
-    
-    <h1>
-      Yes<sup>1</sup>
+
+    <h1 id="answer">
+
+      <sup>1</sup>
     </h1>
     <aside>
       <sup>1</sup>
       Accuracy susceptible to data races
     </aside>
- 
+
   </section>
+  <script type="text/javascript">
+
+  (function () {
+    document.getElementById("answer").insertAdjacentHTML("afterBegin", Math.random() > 0.5 ? "Maybe" : "Yes" );
+  })();
+
+  </script>
 </body>
