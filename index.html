@@ -1,4 +1,5 @@
 <head>
+  <link rel="icon" type="image/x-icon" href="icon.png" />
   <link rel="stylesheet" type="text/css" href="index.css" />
   <title> It's a heisenbug! Should I blame race conditions? </title>
 </head>
@@ -7,8 +8,6 @@
   <section>
 
     <h1 id="answer">
-
-      <sup>1</sup>
     </h1>
     <aside>
       <sup>1</sup>
@@ -18,9 +17,16 @@
   </section>
   <script type="text/javascript">
 
-  (function () {
-    document.getElementById("answer").insertAdjacentHTML("afterBegin", Math.random() > 0.5 ? "Maybe" : "Yes" );
-  })();
+  function race () {
+    document.getElementById("answer").innerHTML = (Math.random() > 0.5 ? "Maybe" : "Yes") + "<sup>1</sup>";
+  }
+
+  race();
+
+  setInterval(
+    race,
+    (Math.floor( Math.random() * 5 ) + 1) * 1000
+  );
 
   </script>
 </body>
