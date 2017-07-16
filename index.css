@@ -31,3 +31,13 @@ aside sup {
   font-size: .7vh;
 }
 
+div {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  font-family: Monospace, sans-serif;
+  color: #707070;
+  font-size: 1vh;
+}
